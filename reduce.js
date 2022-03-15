@@ -6,6 +6,18 @@
 
 
 // Summing an array of numbers:
+const nums = [0,1,2,3,4];
+let sum = nums.reduce((acc, curr) => {
+console.log(
+  "Accumulator:", acc,
+  "Current Value:", curr,
+  "Total:", acc + curr
+  );
+  return acc + curr;
+}, 10); // specify initial value to start accumulator with here.
+// though optional, should always specify the initial value to use for the accumulator to be explicit with intentions.
+// not doing so can lead to unexpected behaviour and strange bugs in your code.
+console.log(sum);
 
 
 const teamMembers = [
