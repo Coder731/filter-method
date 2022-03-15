@@ -7,6 +7,7 @@
 
 // Summing an array of numbers:
 const nums = [0,1,2,3,4];
+// .reduce() method has 3 parts: accumulator, current value, and initial value/
 let sum = nums.reduce((acc, curr) => acc + curr, 0); // specify initial value // simplified callback with init val of 0
 console.log(sum);
 
